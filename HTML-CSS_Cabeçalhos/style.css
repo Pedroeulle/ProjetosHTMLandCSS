@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Importa fontes do Google Fonts */
+:root {
+  --cor__primaria:#000000;
+  --cor__secundaria: #F6F6F6;
+  --cor__tercearia:#f00;
+  --cor__hover:#202020;
+
+  --fonte__primaria:'Krona-One', sans-serif;
+  --fonte__secundaria:'Montserrat', sans-serif;
+}
+
+* { 
+  margin: 0;
+  padding: 0; 
+}
+
+/* Define margem e preenchimento (padding) como zero para todos os elementos */
+
+img {
+  border-radius: 50px;
+  position: relative;
+}
+
+/* Define borda arredondada (border-radius) de 50px e posição relativa para imagens */
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor__primaria);
+    color: var(--cor__secundaria);
+}
+
+/* Define altura total do corpo (body), caixa de dimensionamento (box-sizing) como border-box, cor de fundo e cor do texto */
+
+.cabecalho{
+  padding: 2% 0% 0% 10% ;
+}
+
+.cabecalho__menu{
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho__menu__link{
+font-family: var(--fonte__secundaria);
+  font-size:24px;
+  font-weight: 600;
+  color: var(--cor__tercearia);
+  text-decoration: none;
+}
+
+.apresentacao {
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+}
+
+/* Define margem para o elemento com a classe .apresentacao, display flex, alinhamento vertical centralizado (align-items) e espaço entre os itens (justify-content) */
+
+.apresentacao__conteudo {
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Define largura para o elemento com a classe .apresentacao__conteudo, display flex com direção de coluna, e espaço entre os elementos de 20px */
+
+.apresentacao__conteudo__titulo{
+  font-size: 36px;
+  font-family:  var(--fonte__primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor__tercearia);
+}
+/* Define tamanho da fonte e fonte específica para o elemento com a classe .apresentacao__conteudo__titulo */
+
+.apresentacao__conteudo__texto{
+  font-size: 24px;
+  font-family: var(--fonte__secundaria);
+}
+
+/* Define tamanho da fonte e fonte específica para o elemento com a classe .apresentacao__conteudo__texto */
+
+.apresentacao__conteudo__texto1{
+  font-size: 18px;
+  font-family: var(--fonte__secundaria);
+}
+
+/* Define tamanho da fonte e fonte específica para o elemento com a classe .apresentacao__conteudo__texto1 */
+
+.apresentacao__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+/* Define display flex e espaço entre os elementos para o elemento com a classe .apresentacao__links */
+
+.icon {
+  width: 28px; 
+  height: 28px;
+}
+
+.apresentacao__links__subtitulo{
+  font-family: var(--fonte__primaria);
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.apresentacao__links_link {
+  display: flex;
+  justify-content: center;
+  gap:16px;
+  border: 2px solid  var(--cor__tercearia) ;
+  width: 378px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: var(--cor__secundaria);
+  font-family: var(--fonte__secundaria);
+}
+.apresentacao__links_link:hover {
+  background-color: --cor__hover;
+}
+
+/* Define estilos para o elemento com a classe .apresentacao__links_link, como cor de fundo, largura, alinhamento de texto, borda arredondada, tamanho da fonte, peso da fonte, preenchimento, decoração de texto, cor do texto e fonte específica */
+
+.Rodape{
+  padding: 24px;
+  text-align: center;
+  font-family: var(--fonte__secundaria);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--cor__primaria);
+  background-color: var(--cor__tercearia);
+}
